@@ -1,0 +1,22 @@
+<div class="bot-container" id="bot-container">
+    <div class="bot-icon" onclick="toggleBot()"></div>
+    <iframe
+    allow="microphone;"
+    src="https://console.dialogflow.com/api-client/demo/embedded/fe4ea2ef-4d42-4d94-953d-fbb2cece0d9f">
+    <div class="close-btn" onclick="closeBot()">X</div>
+    </iframe>
+</div>
+
+<script>
+    // Función para alternar el estado del bot (mostrar/ocultar iframe)
+    function toggleBot() {
+        const botContainer = document.getElementById('bot-container');
+        botContainer.classList.toggle('active');
+    }
+
+    // Función para cerrar el bot al hacer clic en el icono de "X"
+    function closeBot() {
+        const botContainer = document.getElementById('bot-container');
+        botContainer.classList.remove('active');
+    }
+</script>
