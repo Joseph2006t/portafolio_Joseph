@@ -53,14 +53,13 @@ dist
 
 # Gatsby files
 .cache/
-public
 
 # vuepress build output
 .vuepress/dist
 
 # vue / cli-service build output
 dist/
-public/
+
 
 # Storybook build outputs
 .out/
